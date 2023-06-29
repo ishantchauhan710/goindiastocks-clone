@@ -14,11 +14,11 @@ const MainBody = () => {
           isOpen ? "flex-[0.75] flex w-auto" : "flex-[1] absolute w-full"
         } flex transition duration-300 ease-in-out`}
       >
-        <div className="flex-[0.5]">
+        <div className="flex-[0.6]">
           <DiscussionForum />
         </div>
-        <div className="flex-[0.5]">
-          <MarketStories />
+        <div className="flex-[0.4]">
+          <MarketStories isOpen={isOpen} />
         </div>
       </div>
     </div>
