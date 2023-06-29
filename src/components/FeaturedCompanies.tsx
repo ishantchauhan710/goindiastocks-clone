@@ -5,7 +5,9 @@ import React from "react";
 const FeaturedCompanies = () => {
   return (
     <div>
-      <div className="hidden md:block p-3 text-red-600 text-xl">FEATURED COMPANIES</div>
+      <div className="hidden md:block p-3 text-red-600 text-xl">
+        FEATURED COMPANIES
+      </div>
       <div className="flex whitespace-no-wrap bg-[#e7f0fb]/50 py-2 items-center overflow-x-hidden">
         <div className="relative">
           <div className="flex animate-marquee">
