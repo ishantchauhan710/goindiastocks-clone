@@ -53,4 +53,78 @@ export const AppData = {
     "/dtpatten1.png",
     "/deepind.png",
   ],
+  posts: [
+    {
+      image: "/stock1.jpg",
+      userProfile: "/avatar.png",
+      userName: "Lorem ipsum",
+      sector: 1,
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+      likes: "2k",
+      views: "2k",
+      comments: "2k",
+      timeAgo: "2min ago",
+    },
+    {
+      image: null,
+      userProfile: "/avatar.png",
+      userName: "Lorem ipsum",
+      sector: 2,
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+      likes: "1k",
+      views: "7k",
+      comments: "3k",
+      timeAgo: "5min ago",
+    },
+    {
+      image: null,
+      userProfile: "/avatar.png",
+      userName: "Lorem ipsum",
+      sector: 3,
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+      likes: "9k",
+      views: "3k",
+      comments: "3k",
+      timeAgo: "10min ago",
+    },
+    {
+      image: "/stock1.jpg",
+      userProfile: "/avatar.png",
+      userName: "Lorem ipsum",
+      sector: 1,
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+      likes: "2k",
+      views: "2k",
+      comments: "2k",
+      timeAgo: "2min ago",
+    },
+    {
+      image: null,
+      userProfile: "/avatar.png",
+      userName: "Lorem ipsum",
+      sector: 2,
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+      likes: "1k",
+      views: "7k",
+      comments: "3k",
+      timeAgo: "5min ago",
+    },
+    {
+      image: null,
+      userProfile: "/avatar.png",
+      userName: "Lorem ipsum",
+      sector: 3,
+      content:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+      likes: "9k",
+      views: "3k",
+      comments: "3k",
+      timeAgo: "10min ago",
+    },
+  ],
 };
