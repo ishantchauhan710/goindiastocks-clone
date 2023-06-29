@@ -5,7 +5,7 @@ import MarketStories from "./MarketStories";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const MainBody = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [isBigScreen, setIsBigScreen] = useState(true);
   const [selectedTab, setSelectedTab] = useState(1);
   const bigScreen = useMediaQuery("(min-width: 769px)");
