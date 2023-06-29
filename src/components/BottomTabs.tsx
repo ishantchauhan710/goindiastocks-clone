@@ -32,7 +32,7 @@ const BottomTabs = () => {
   const [selectedTab, setSelectedTab] = useState(tabs[2].name);
 
   return (
-    <div className="bg-[#1d3b61] z-[1001] fixed bottom-0 w-full flex items-center justify-stretch text-white text-2xl">
+    <div className="bg-[#1d3b61] z-[1001] fixed bottom-0 w-full flex md:hidden items-center justify-stretch text-white text-2xl">
       {tabs.map((tab) => (
         <div
           key={tab.name}
