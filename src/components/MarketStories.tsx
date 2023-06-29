@@ -20,16 +20,16 @@ const MarketStories = ({ isOpen }: MarketStoriesProps) => {
         {AppData.marketStories.map((item, i) => (
           <div
             key={item.story + i}
-            className="relative mb-4 rounded-xl w-full h-44 overflow-hidden"
+            className="relative mb-4 z-[2] rounded-xl w-full h-44 overflow-hidden"
           >
             <Image
               src={item.img}
               alt="market image"
               style={{ objectFit: "cover" }}
               fill
-              className="rounded-md w-full h-full overflow-hidden"
+              className="rounded-md w-full h-full overflow-hidden z-[-1]"
             />
-            <div className="z-[333] absolute bottom-0 m-2 text-white text-sm cursor-pointer">
+            <div className="z-[1] absolute bottom-0 m-2 text-white text-sm cursor-pointer">
               {item.story}
             </div>
           </div>

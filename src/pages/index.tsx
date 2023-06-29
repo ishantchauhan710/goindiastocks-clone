@@ -7,6 +7,7 @@ import PopularStocksBar from "@/components/PopularStocksBar";
 import FeaturedCompanies from "@/components/FeaturedCompanies";
 import MainBody from "@/components/MainBody";
 import { useState } from "react";
+import BottomTabs from "@/components/BottomTabs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
         <PopularStocksBar />
         <FeaturedCompanies />
         <MainBody />
+        <BottomTabs />
       </main>
     </>
   );

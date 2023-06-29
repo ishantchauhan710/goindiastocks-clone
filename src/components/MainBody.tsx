@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 import DiscussionForum from "./DiscussionForum";
 import MarketStories from "./MarketStories";
@@ -6,8 +6,14 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const MainBody = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const isBigScreen = useMediaQuery("(min-width: 769px)");
+  const [isBigScreen, setIsBigScreen] = useState(true);
   const [selectedTab, setSelectedTab] = useState(1);
+  const bigScreen = useMediaQuery("(min-width: 769px)");
+
+  // To prevent hydration error
+  useEffect(() => {
+    setIsBigScreen(bigScreen);
+  }, [bigScreen]);
 
   return (
     <div className="flex relative">

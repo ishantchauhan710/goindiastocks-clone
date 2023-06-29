@@ -69,8 +69,7 @@ const DiscussionForum = () => {
     return (
       <div className="relative mx-2 mt-8 px-4 py-4 flex flex-col rounded-md shadow-[0px_2px_6px_rgba(0,0,0,0.46)] bg-white">
         {image && (
-          <div 
-          className="relative mt-8 mb-4 rounded-sm w-full h-56 overflow-hidden">
+          <div className="relative mt-8 mb-4 rounded-sm w-full h-56 overflow-hidden">
             <Image
               src={image}
               alt="post image"
@@ -80,7 +79,9 @@ const DiscussionForum = () => {
             />
           </div>
         )}
-        <div className="text-blue-600 right-0 mr-4 font-medium absolute">{timeAgo}</div>
+        <div className="text-blue-600 right-0 mr-4 font-medium absolute">
+          {timeAgo}
+        </div>
         <div className={`${!post.image && "mt-8"} flex items-center`}>
           <Image
             src={userProfile}
@@ -137,7 +138,9 @@ const DiscussionForum = () => {
 
   return (
     <div className="md:max-h-[calc(100vh-(215px))] md:overflow-y-auto">
-      <div className="hidden md:block p-3 text-red-600 text-xl">DISCUSSION FORUM</div>
+      <div className="hidden md:block p-3 text-red-600 text-xl">
+        DISCUSSION FORUM
+      </div>
       <div className="sm:ml-8 mt-3 md:mt-0">
         <SearchSection />
         {AppData.posts.map((post, i) => (
