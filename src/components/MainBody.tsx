@@ -6,8 +6,8 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const MainBody = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const [selectedTab, setSelectedTab] = useState(1);
   const isBigScreen = useMediaQuery("(min-width: 769px)");
+  const [selectedTab, setSelectedTab] = useState(1);
 
   return (
     <div className="flex relative">

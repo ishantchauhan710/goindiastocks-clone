@@ -22,7 +22,7 @@ const Drawer = ({ isOpen, setIsOpen }: DrawerProps) => {
     <div
       className={`${
         isOpen ? "flex-[0.25]" : "-translate-x-full"
-      } z-[2] bg-[#1d3b61] text-white min-h-[calc(100vh-215px)] transition duration-300 ease-in-out fixed w-10/12 md:w-auto top-0 left-0 bottom-0 md:static`}
+      } z-[1000] bg-[#1d3b61] shadow-xl md:shadow-none text-white min-h-[calc(100vh-215px)] transition duration-300 ease-in-out fixed w-10/12 md:w-auto top-0 left-0 bottom-0 md:static`}
     >
       <div className="relative">
         <div

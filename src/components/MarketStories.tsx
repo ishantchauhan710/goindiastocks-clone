@@ -9,11 +9,11 @@ interface MarketStoriesProps {
 
 const MarketStories = ({ isOpen }: MarketStoriesProps) => {
   return (
-    <div className="max-h-[calc(100vh-(215px))] overflow-y-auto relative">
-      <div className="bg-[#1d3b61]  hover:bg-[#0e213a] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl cursor-pointer fixed z-[1] bottom-0 right-0 m-8">
+    <div className="md:max-h-[calc(100vh-(215px))] md:overflow-y-auto relative">
+      <div className="bg-[#1d3b61]  hover:bg-[#0e213a] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl cursor-pointer fixed z-[999] bottom-0 right-0 m-8">
         <IoMdAdd />
       </div>
-      <div className="p-3 text-red-600 text-xl">MARKET STORIES</div>
+      <div className="hidden md:block p-3 text-red-600 text-xl">MARKET STORIES</div>
       <div
         className={`grid ${isOpen ? "grid-cols-1" : "grid-cols-2"} gap-4 p-4`}
       >

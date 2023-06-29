@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar";
 import PopularStocksBar from "@/components/PopularStocksBar";
 import FeaturedCompanies from "@/components/FeaturedCompanies";
 import MainBody from "@/components/MainBody";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 

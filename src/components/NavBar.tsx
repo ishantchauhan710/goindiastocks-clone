@@ -15,16 +15,24 @@ const NavBar = () => {
           alt="logo"
           className="cursor-pointer"
         />
-        <div className="ml-4 flex items-center bg-[#e0e0e0] shadow-[inset_0px_2px_4px_rgba(0,0,0,0.6)] w-8/12 sm:w-full rounded-md">
+        <div className="ml-4 flex items-center bg-[#e0e0e0] shadow-[inset_0px_2px_4px_rgba(0,0,0,0.6)] w-full rounded-md">
           <input
             type="text"
-            className="focus:outline-none bg-transparent px-4 py-2 flex-[1]"
+            className="focus:outline-none bg-transparent px-4 py-2 w-full"
           />
           <FiSearch className="mr-4 text-xl text-gray-700 cursor-pointer" />
         </div>
+        <Image
+          quality={100}
+          src="/avatar.png"
+          width={40}
+          height={40}
+          alt="logo"
+          className="md:hidden cursor-pointer rounded-full ml-4"
+        />
       </div>
       <div className="hidden md:flex md:flex-[0.5] items-center justify-end">
-        <button className="bg-transparent px-5 py-2 text-sm mr-3 cursor-pointer text-zinc-950">
+        <button className="bg-transparent px-5 py-2 mr-3 cursor-pointer text-zinc-950">
           Contact Us
         </button>
 

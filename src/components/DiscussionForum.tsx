@@ -15,14 +15,14 @@ const DiscussionForum = () => {
       <div>
         <div className="font-semibold text-xl text-zinc-800">Filters</div>
         <div className="m-2 px-4 py-4 flex flex-wrap-reverse rounded-md shadow-[0px_2px_6px_rgba(0,0,0,0.46)] bg-white">
-          <div className="flex mt-2">
-            <div className="cursor-pointer rounded-full text-sm px-4 py-2 bg-red-700 hover:bg-red-800 text-white mr-2">
+          <div className="flex items-center mt-2 flex-wrap">
+            <div className="my-2 md:my-0 cursor-pointer rounded-full text-sm px-4 py-2 bg-red-700 hover:bg-red-800 text-white mr-2">
               Sector 1
             </div>
-            <div className="cursor-pointer rounded-full text-sm px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white mr-2">
+            <div className="my-2 md:my-0 cursor-pointer rounded-full text-sm px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white mr-2">
               Sector 2
             </div>
-            <div className="cursor-pointer rounded-full text-sm px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white">
+            <div className="my-2 md:my-0 cursor-pointer rounded-full text-sm px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white">
               Sector 3
             </div>
           </div>
@@ -30,7 +30,7 @@ const DiscussionForum = () => {
             <FiSearch className="ml-4 text-xl text-gray-700 cursor-pointer" />
             <input
               type="text"
-              className="focus:outline-none bg-transparent px-4 py-2 flex-[1]"
+              className="focus:outline-none w-full bg-transparent px-4 py-2"
             />
           </div>
         </div>
@@ -81,7 +81,7 @@ const DiscussionForum = () => {
           </div>
         )}
         <div className="text-blue-600 right-0 mr-4 font-medium absolute">{timeAgo}</div>
-        <div className="flex items-center">
+        <div className={`${!post.image && "mt-8"} flex items-center`}>
           <Image
             src={userProfile}
             width={32}
@@ -95,11 +95,11 @@ const DiscussionForum = () => {
               Sector 1
             </div>
           ) : sector === 2 ? (
-            <div className="cursor-pointer rounded-full text-sm px-3 py-1 bg-blue-700 hover:bg-red-800 text-white mr-2">
+            <div className="cursor-pointer rounded-full text-sm px-3 py-1 bg-blue-700 hover:bg-blue-800 text-white mr-2">
               Sector 2
             </div>
           ) : (
-            <div className="cursor-pointer rounded-full text-sm px-3 py-1 bg-yellow-400 hover:bg-red-500 text-white mr-2">
+            <div className="cursor-pointer rounded-full text-sm px-3 py-1 bg-yellow-400 hover:bg-yellow-500 text-white mr-2">
               Sector 3
             </div>
           )}
@@ -136,9 +136,9 @@ const DiscussionForum = () => {
   };
 
   return (
-    <div className="max-h-[calc(100vh-(215px))] overflow-y-auto">
-      <div className="p-3 text-red-600 text-xl">DISCUSSION FORUM</div>
-      <div className="ml-8">
+    <div className="md:max-h-[calc(100vh-(215px))] md:overflow-y-auto">
+      <div className="hidden md:block p-3 text-red-600 text-xl">DISCUSSION FORUM</div>
+      <div className="sm:ml-8 mt-3 md:mt-0">
         <SearchSection />
         {AppData.posts.map((post, i) => (
           <Post post={post} key={post.userName + i} />
