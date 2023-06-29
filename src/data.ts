@@ -44,4 +44,13 @@ export const AppData = {
       profit: true,
     },
   ],
+  featuredCompanies: [
+    "/caprinew1.jpg",
+    "/ganeshhousing.jpg",
+    "/fino.png",
+    "/gravita.jpg",
+    "/godawari.jpg",
+    "/dtpatten1.png",
+    "/deepind.png",
+  ],
 };
