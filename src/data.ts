@@ -127,4 +127,36 @@ export const AppData = {
       timeAgo: "10min ago",
     },
   ],
+  marketStories: [
+    {
+      img: "/person.jpg",
+      story:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+    },
+    {
+      img: "/person.jpg",
+      story:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+    },
+    {
+      img: "/person.jpg",
+      story:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+    },
+    {
+      img: "/person.jpg",
+      story:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+    },
+    {
+      img: "/person.jpg",
+      story:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+    },
+    {
+      img: "/person.jpg",
+      story:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industury.",
+    },
+  ],
 };

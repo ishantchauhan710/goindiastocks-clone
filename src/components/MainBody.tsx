@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Drawer from "./Drawer";
 import DiscussionForum from "./DiscussionForum";
+import MarketStories from "./MarketStories";
 
 const MainBody = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -17,7 +18,7 @@ const MainBody = () => {
           <DiscussionForum />
         </div>
         <div className="flex-[0.5]">
-          <div className="p-3 text-red-600 text-xl">MARKET STORIES</div>
+          <MarketStories />
         </div>
       </div>
     </div>

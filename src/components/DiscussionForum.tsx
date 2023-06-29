@@ -67,10 +67,10 @@ const DiscussionForum = () => {
       timeAgo,
     } = post;
     return (
-      <div className="mx-2 mt-8 px-4 py-4 flex flex-col rounded-md shadow-[0px_2px_6px_rgba(0,0,0,0.46)] bg-white">
+      <div className="relative mx-2 mt-8 px-4 py-4 flex flex-col rounded-md shadow-[0px_2px_6px_rgba(0,0,0,0.46)] bg-white">
         {image && (
           <div 
-          className="relative mb-4 rounded-sm w-full h-44 overflow-hidden">
+          className="relative mt-8 mb-4 rounded-sm w-full h-56 overflow-hidden">
             <Image
               src={image}
               alt="post image"
@@ -80,6 +80,7 @@ const DiscussionForum = () => {
             />
           </div>
         )}
+        <div className="text-blue-600 right-0 mr-4 font-medium absolute">{timeAgo}</div>
         <div className="flex items-center">
           <Image
             src={userProfile}
